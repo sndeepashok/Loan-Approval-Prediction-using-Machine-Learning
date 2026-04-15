@@ -10,6 +10,8 @@ Clean and preprocess raw loan data
 Perform feature engineering
 Train a machine learning model
 Predict loan approval status
+
+
 📁 Dataset
 
 The dataset used is:
@@ -21,6 +23,8 @@ Self-employed status
 Income details
 Asset values (residential, commercial, luxury, bank)
 Loan status (target variable)
+
+
 🧹 Data Preprocessing
 
 Steps performed:
@@ -35,19 +39,27 @@ Created a new feature:
 Assets = sum of all asset values
 Dropped redundant asset columns
 Checked for missing values
+
+
 🧠 Model Building
 Split data into training and testing sets (80/20)
 Applied feature scaling using StandardScaler
 Trained model using Logistic Regression
+
+
 📈 Model Performance
 Evaluated using .score() on test data
 Outputs prediction accuracy
+
+
 💾 Model Saving
 
 The trained model and scaler are saved using pickle:
 
 model.pkl → Trained Logistic Regression model
 scaler.pkl → StandardScaler object
+
+
 🔮 Making Predictions
 
 Example:
@@ -62,6 +74,8 @@ pred_data = scaler.transform([[...]])
 
 prediction = model.predict(pred_data)
 print(prediction)
+
+
 🛠️ Technologies Used
 Python 🐍
 Pandas
